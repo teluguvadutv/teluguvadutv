@@ -228,3 +228,6 @@ jekyll-archives:
 languages: ["te", "en", "kn", "ta", "ml", "hi"] # మీ ఆరు భాషలు మరియు వాటి ప్రాధాన్యత
 default_lang: "te" # మీ డిఫాల్ట్ భాష తెలుగు
 exclude_from_localizations: ["assets"]
+
+plugins:
+  - jekyll-polyglot
