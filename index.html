@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teluguvadu TV</title>
+  <title>తెలుగువాడు టీవీ</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
@@ -12,65 +12,74 @@
     }
   </style>
 </head>
-<body class="bg-gray-900 text-white flex items-center justify-center min-h-screen p-4">
+<body class="bg-gray-900 text-white p-4 min-h-screen">
 
-  <!-- Main container with a card-like design -->
-  <div class="bg-gray-800 p-8 md:p-12 rounded-2xl shadow-xl max-w-4xl w-full text-center">
-
-    <!-- Header Section -->
-    <h1 class="text-3xl md:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
-     టెస్ట్‌ పేజీ
-    </h1>
-    <p class="text-lg md:text-xl text-gray-300 mb-8">
-      వార్తలు చదవడానికి భాష ఎంచుకోండి.
-    </p>
-
-    <!-- Language Links Section -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
+  <div class="container mx-auto max-w-6xl">
+    
+    <!-- Language Tabs Section -->
+    <div class="flex flex-wrap justify-center md:justify-start gap-2 mb-8 mt-4">
       <!-- Telugu -->
-      <a href="/te/" class="block bg-blue-500 hover:bg-blue-600 transition duration-300 transform hover:scale-105 p-6 rounded-xl shadow-lg">
-        <h2 class="text-xl md:text-2xl font-bold">తెలుగు</h2>
-        <p class="text-sm mt-1">Telugu</p>
-      </a>
-
+      <a href="/te/" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full transition duration-300 shadow-md">తెలుగు</a>
       <!-- English -->
-      <a href="/en/" class="block bg-purple-500 hover:bg-purple-600 transition duration-300 transform hover:scale-105 p-6 rounded-xl shadow-lg">
-        <h2 class="text-xl md:text-2xl font-bold">English</h2>
-        <p class="text-sm mt-1">English</p>
-      </a>
-      
+      <a href="/en/" class="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-full transition duration-300 shadow-md">English</a>
       <!-- Kannada -->
-      <a href="/kn/" class="block bg-green-500 hover:bg-green-600 transition duration-300 transform hover:scale-105 p-6 rounded-xl shadow-lg">
-        <h2 class="text-xl md:text-2xl font-bold">ಕನ್ನಡ</h2>
-        <p class="text-sm mt-1">Kannada</p>
-      </a>
-      
+      <a href="/kn/" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full transition duration-300 shadow-md">ಕನ್ನಡ</a>
       <!-- Tamil -->
-      <a href="/ta/" class="block bg-pink-500 hover:bg-pink-600 transition duration-300 transform hover:scale-105 p-6 rounded-xl shadow-lg">
-        <h2 class="text-xl md:text-2xl font-bold">தமிழ்</h2>
-        <p class="text-sm mt-1">Tamil</p>
-      </a>
-      
+      <a href="/ta/" class="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-full transition duration-300 shadow-md">தமிழ்</a>
       <!-- Malayalam -->
-      <a href="/ml/" class="block bg-orange-500 hover:bg-orange-600 transition duration-300 transform hover:scale-105 p-6 rounded-xl shadow-lg">
-        <h2 class="text-xl md:text-2xl font-bold">മലയാളം</h2>
-        <p class="text-sm mt-1">Malayalam</p>
-      </a>
-      
+      <a href="/ml/" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-full transition duration-300 shadow-md">മലയാളം</a>
       <!-- Hindi -->
-      <a href="/hi/" class="block bg-red-500 hover:bg-red-600 transition duration-300 transform hover:scale-105 p-6 rounded-xl shadow-lg">
-        <h2 class="text-xl md:text-2xl font-bold">हिन्दी</h2>
-        <p class="text-sm mt-1">Hindi</p>
-      </a>
-
+      <a href="/hi/" class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-full transition duration-300 shadow-md">हिन्दी</a>
     </div>
 
-    <!-- Footer or additional info can go here -->
-    <div class="mt-8 text-gray-400">
-      <!-- You can add your copyright or other links here -->
-    </div>
+    <!-- Main Content Section -->
+    <div class="bg-gray-800 p-8 md:p-12 rounded-2xl shadow-xl">
 
+      <!-- Header Section -->
+      <h1 class="text-3xl md:text-5xl font-bold text-center mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
+        తెలుగువాడు టీవీ
+      </h1>
+      <p class="text-lg md:text-xl text-gray-300 text-center mb-12">
+        తాజా వార్తలు మరియు విశ్లేషణలు
+      </p>
+
+      <!-- Latest Posts Section -->
+      <h2 class="text-2xl md:text-3xl font-bold mb-6 text-yellow-400 border-b border-gray-600 pb-2">తాజా పోస్టులు</h2>
+
+      <!-- Loop through posts (This is a placeholder for Jekyll) -->
+      <!-- The actual Jekyll loop would look like this: -->
+      <!-- {% for post in site.posts limit: 5 %} -->
+      <div class="space-y-6">
+
+        <!-- Post 1 -->
+        <a href="#" class="block bg-gray-700 hover:bg-gray-600 p-6 rounded-lg shadow-md transition duration-300 transform hover:scale-105">
+          <h3 class="text-xl md:text-2xl font-bold mb-2">ఇది మొదటి పోస్ట్ టైటిల్</h3>
+          <p class="text-gray-400 text-sm">పోస్ట్ తేది: August 5, 2025</p>
+          <p class="mt-2 text-gray-300 line-clamp-2">ఇక్కడ పోస్ట్ యొక్క సంక్షిప్త వివరణ ఉంటుంది. ఇది కంటెంట్ సారాంశాన్ని చూపిస్తుంది.</p>
+        </a>
+
+        <!-- Post 2 -->
+        <a href="#" class="block bg-gray-700 hover:bg-gray-600 p-6 rounded-lg shadow-md transition duration-300 transform hover:scale-105">
+          <h3 class="text-xl md:text-2xl font-bold mb-2">రెండవ పోస్ట్ టైటిల్</h3>
+          <p class="text-gray-400 text-sm">పోస్ట్ తేది: August 4, 2025</p>
+          <p class="mt-2 text-gray-300 line-clamp-2">ఈ పోస్ట్ యొక్క సంక్షిప్త వివరణ ఇక్కడ ఉంది. ఇది వెబ్ సైట్ యొక్క కంటెంట్‌ను వివరిస్తుంది.</p>
+        </a>
+
+        <!-- Post 3 -->
+        <a href="#" class="block bg-gray-700 hover:bg-gray-600 p-6 rounded-lg shadow-md transition duration-300 transform hover:scale-105">
+          <h3 class="text-xl md:text-2xl font-bold mb-2">మూడవ పోస్ట్ టైటిల్</h3>
+          <p class="text-gray-400 text-sm">పోస్ట్ తేది: August 3, 2025</p>
+          <p class="mt-2 text-gray-300 line-clamp-2">మరో పోస్ట్ యొక్క సంక్షిప్త వివరణ ఇక్కడ ఉంటుంది. మరింత సమాచారం కోసం ఈ లింక్‌పై క్లిక్ చేయండి.</p>
+        </a>
+        
+      </div>
+      <!-- {% endfor %} -->
+
+      <!-- Footer or additional info can go here -->
+      <div class="mt-12 text-gray-400 text-center">
+        <!-- You can add your copyright or other links here -->
+      </div>
+    </div>
   </div>
 
 </body>
