@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>తెలుగువాడు టీవీ</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-900 text-white p-4 min-h-screen">
+
+  <div class="container mx-auto max-w-6xl">
+    
+    <!-- Language Tabs Section -->
+    <div class="flex flex-wrap justify-center md:justify-start gap-2 mb-8 mt-4">
+      <!-- Telugu -->
+      <a href="/te/" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full transition duration-300 shadow-md">తెలుగు</a>
+      <!-- English -->
+      <a href="/en/" class="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-full transition duration-300 shadow-md">English</a>
+      <!-- Kannada -->
+      <a href="/kn/" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full transition duration-300 shadow-md">ಕನ್ನಡ</a>
+      <!-- Tamil -->
+      <a href="/ta/" class="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-full transition duration-300 shadow-md">தமிழ்</a>
+      <!-- Malayalam -->
+      <a href="/ml/" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-full transition duration-300 shadow-md">മലയാളം</a>
+      <!-- Hindi -->
+      <a href="/hi/" class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-full transition duration-300 shadow-md">हिन्दी</a>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="bg-gray-800 p-8 md:p-12 rounded-2xl shadow-xl">
+
+      <!-- Header Section -->
+      <h1 class="text-3xl md:text-5xl font-bold text-center mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
+        తెలుగువాడు టీవీ
+      </h1>
+      <p class="text-lg md:text-xl text-gray-300 text-center mb-12">
+        తాజా వార్తలు మరియు విశ్లేషణలు
+      </p>
+
+      <!-- Latest Posts Section -->
+      <h2 class="text-2xl md:text-3xl font-bold mb-6 text-yellow-400 border-b border-gray-600 pb-2">తాజా పోస్టులు</h2>
+
+      <!-- Loop through posts (This is a placeholder for Jekyll) -->
+      <!-- The actual Jekyll loop would look like this: -->
+      {% for post in site.posts limit: 5 %}
+      <div class="space-y-6">
+
+        <!-- Post item with Jekyll variables -->
+        <a href="{{ post.url }}" class="block bg-gray-700 hover:bg-gray-600 p-6 rounded-lg shadow-md transition duration-300 transform hover:scale-105">
+          <h3 class="text-xl md:text-2xl font-bold mb-2">{{ post.title }}</h3>
+          <p class="text-gray-400 text-sm">పోస్ట్ తేది: {{ post.date | date: "%B %-d, %Y" }}</p>
+          <p class="mt-2 text-gray-300 line-clamp-2">{{ post.excerpt }}</p>
+        </a>
+      </div>
+      {% endfor %}
+
+      <!-- Footer or additional info can go here -->
+      <div class="mt-12 text-gray-400 text-center">
+        <!-- You can add your copyright or other links here -->
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
