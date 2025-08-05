@@ -48,32 +48,17 @@
 
       <!-- Loop through posts (This is a placeholder for Jekyll) -->
       <!-- The actual Jekyll loop would look like this: -->
-      <!-- {% for post in site.posts limit: 5 %} -->
+      {% for post in site.posts limit: 5 %}
       <div class="space-y-6">
 
-        <!-- Post 1 -->
-        <a href="#" class="block bg-gray-700 hover:bg-gray-600 p-6 rounded-lg shadow-md transition duration-300 transform hover:scale-105">
-          <h3 class="text-xl md:text-2xl font-bold mb-2">ఇది మొదటి పోస్ట్ టైటిల్</h3>
-          <p class="text-gray-400 text-sm">పోస్ట్ తేది: August 5, 2025</p>
-          <p class="mt-2 text-gray-300 line-clamp-2">ఇక్కడ పోస్ట్ యొక్క సంక్షిప్త వివరణ ఉంటుంది. ఇది కంటెంట్ సారాంశాన్ని చూపిస్తుంది.</p>
+        <!-- Post item with Jekyll variables -->
+        <a href="{{ post.url }}" class="block bg-gray-700 hover:bg-gray-600 p-6 rounded-lg shadow-md transition duration-300 transform hover:scale-105">
+          <h3 class="text-xl md:text-2xl font-bold mb-2">{{ post.title }}</h3>
+          <p class="text-gray-400 text-sm">పోస్ట్ తేది: {{ post.date | date: "%B %-d, %Y" }}</p>
+          <p class="mt-2 text-gray-300 line-clamp-2">{{ post.excerpt }}</p>
         </a>
-
-        <!-- Post 2 -->
-        <a href="#" class="block bg-gray-700 hover:bg-gray-600 p-6 rounded-lg shadow-md transition duration-300 transform hover:scale-105">
-          <h3 class="text-xl md:text-2xl font-bold mb-2">రెండవ పోస్ట్ టైటిల్</h3>
-          <p class="text-gray-400 text-sm">పోస్ట్ తేది: August 4, 2025</p>
-          <p class="mt-2 text-gray-300 line-clamp-2">ఈ పోస్ట్ యొక్క సంక్షిప్త వివరణ ఇక్కడ ఉంది. ఇది వెబ్ సైట్ యొక్క కంటెంట్‌ను వివరిస్తుంది.</p>
-        </a>
-
-        <!-- Post 3 -->
-        <a href="#" class="block bg-gray-700 hover:bg-gray-600 p-6 rounded-lg shadow-md transition duration-300 transform hover:scale-105">
-          <h3 class="text-xl md:text-2xl font-bold mb-2">మూడవ పోస్ట్ టైటిల్</h3>
-          <p class="text-gray-400 text-sm">పోస్ట్ తేది: August 3, 2025</p>
-          <p class="mt-2 text-gray-300 line-clamp-2">మరో పోస్ట్ యొక్క సంక్షిప్త వివరణ ఇక్కడ ఉంటుంది. మరింత సమాచారం కోసం ఈ లింక్‌పై క్లిక్ చేయండి.</p>
-        </a>
-        
       </div>
-      <!-- {% endfor %} -->
+      {% endfor %}
 
       <!-- Footer or additional info can go here -->
       <div class="mt-12 text-gray-400 text-center">
