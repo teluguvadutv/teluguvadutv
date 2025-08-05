@@ -17,12 +17,11 @@ script_includes:
 <article class="px-1" data-toc="{{ enable_toc }}">
   <header>
     <h1 data-toc-skip>{{ page.title }}</h1>
-	Read this in your language : 	
-	{% for lang in site.languages %} {% if page.lang != lang %} {{ lang }} {% endif %} {% endfor %} 
-    {% if page.description %}
-      <p class="post-desc fw-light mb-4">{{ page.description }}</p>
+	    {% if page.description %}
+      <p class="post-desc fw-light mb-4">{{ page.description }}</p></p>
     {% endif %}
-
+<p Read this in your language : 
+	{% for lang in site.languages %} {% if page.lang != lang %} {{ lang }} {% endif %} {% endfor %} > </p>	
     <div class="post-meta text-muted">
       <!-- published date -->
       <span>
