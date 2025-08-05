@@ -28,7 +28,7 @@ script_includes:
         {% if page.lang == lang %}
           <span class="language-switcher-item fw-bold me-2">{{ lang | upcase }}</span>
         {% else %}
-          {% assign post_url = site.url | append: "/" | append: lang | append: "/" | append: page.slug %}
+          {% assign post_url = site.url | append: "/" | append: lang | append: page.url %}
           <a href="{{ post_url }}" class="language-switcher-item text-muted me-2">{{ lang | upcase }}</a>
         {% endif %}
       {% endfor %}
