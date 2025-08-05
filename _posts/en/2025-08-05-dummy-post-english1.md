@@ -1,10 +1,10 @@
 ---
 title: "Our Telugu"
 date: 2025-08-05 10:00:00 +0530
-lang: "te"
+lang: "en"
 ref: "post-1" # all items should have same reference
 categories:
-  - వార్తలు
+  - News
 tags:
   - English
   - Jekyll
