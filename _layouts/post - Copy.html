@@ -17,23 +17,11 @@ script_includes:
 <article class="px-1" data-toc="{{ enable_toc }}">
   <header>
     <h1 data-toc-skip>{{ page.title }}</h1>
-    {% if page.description %}
-      <p class="post-desc fw-light mb-4">{{ page.description }}</p>
+	    {% if page.description %}
+      <p class="post-desc fw-light mb-4">{{ page.description }}</p></p>
     {% endif %}
-
-    <!-- Corrected Language Switcher Code -->
-    <div class="d-flex align-items-center mb-3">
-      <p class="mb-0 me-2">Read this in your language : </p>
-      {% for lang in site.languages %}
-        {% if page.lang == lang %}
-          <span class="language-switcher-item fw-bold me-2">{{ lang | upcase }}</span>
-        {% else %}
-          {% assign post_url = site.url | append: "/" | append: lang | append: "/" | append: page.slug %}
-          <a href="{{ post_url }}" class="language-switcher-item text-muted me-2">{{ lang | upcase }}</a>
-        {% endif %}
-      {% endfor %}
-    </div>
-
+<p Read this in your language : 
+	{% for lang in site.languages %} {% if page.lang != lang %} {{ lang }} {% endif %} {% endfor %} > </p>	
     <div class="post-meta text-muted">
       <!-- published date -->
       <span>
@@ -178,7 +166,7 @@ script_includes:
         <a href="{{ site.data.locales[lang].copyright.license.link }}">
           {{ site.data.locales[lang].copyright.license.name }}
         </a>
-          {% endcapture %}
+        {% endcapture %}
 
           {{ site.data.locales[lang].copyright.license.template | replace: ':LICENSE_NAME', _replacement }}
         {% endif %}
