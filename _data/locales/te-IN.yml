@@ -1,0 +1,93 @@
+# The layout text of site
+
+# ----- Commons label -----
+
+layout:
+  post: పోస్ట్‌
+  category: కేటగిరీ
+  tag: ట్యాగ్
+
+# The tabs of sidebar
+tabs:
+  # format: <filename_without_extension>: <value>
+  home: హోమ్‌
+  categories: కేటగిరీలు
+  tags: ట్యాగ్స్‌
+  archives: ఆర్కైవ్స్‌
+  about: ..గురించి
+
+# the text displayed in the search bar & search results
+search:
+  hint: సూచన
+  cancel: క్యాన్సిల్‌
+  no_results: అయ్యో! మీకు కావలసింది ఇక్కడ లేదు.
+
+panel:
+  lastmod: ఇటీవలే అప్ డేట్ అయింది.
+  trending_tags: ట్రెండింగ్ ట్యాగ్స్‌
+  popular_posts: పాపులర్ పోస్ట్‌లు  
+  toc: కంటెంట్స్‌ జాబితా
+
+copyright:
+  # Shown at the bottom of the post
+  license:
+    template: This post is licensed under :LICENSE_NAME by the author.
+    name: CC BY 4.0
+    link: https://creativecommons.org/licenses/by/4.0/
+
+  # Displayed in the footer
+  brief: కొన్ని హక్కులు రిజర్వ్‌ అయి ఉన్నాయి.
+  verbose: >-
+    ప్రత్యేకించి సూచిస్తే తప్ప, ఈ బ్లాగ్‌ లోని పోస్టులన్నీ క్రియేటివ్‌ కామన్స్‌ ఎట్రిబ్యూషన్స్‌ 4.0 ఇంటర్‌నేషనల్‌ కింద
+    లైసెన్స్‌ అయినవే! (CC BY 4.0) License by the author.
+
+meta: Using the :THEME theme for :PLATFORM.
+
+not_found:
+  statement: క్షమించండి, ఆ URL మిస్ ప్లేస్ అయింది. వేరే ఎక్కడికో పాయింట్ చేస్తోంది.
+
+notification:
+  update_found: A new version of content is available.
+  update: Update
+
+# ----- Posts related labels -----
+
+post:
+  written_by: రాసింది -
+  posted: Posted
+  updated: అప్ డేట్ అయింది
+  words: పదాలు
+  pageview_measure: వ్యూస్‌
+  read_time:
+    unit: మినిమమ్‌
+    prompt: చదవండి
+  relate_posts: ఇంకా తెలుసుకోవాలంటే..
+  share: పంచుకోండి
+  share_on: ఇక్కడ పంచుకోండి
+  button:
+    next: తరవాతిది
+    previous: మునుపటిది
+    copy_code:
+      succeed: కాపీ అయింది!
+    share_link:
+      title: లింక్ కాపీ చేయండి
+      succeed: లింక్ విజయవంతంగా కాపీ అయింది!
+
+# Date time format.
+# See: <http://strftime.net/>, <https://day.js.org/docs/en/display/format>
+df:
+  post:
+    strftime: "%b %e, %Y"
+    dayjs: "ll"
+  archives:
+    strftime: "%b"
+    dayjs: "MMM"
+
+# categories page
+categories:
+  category_measure:
+    singular: కేటగిరీ
+    plural: కేటగిరీలు
+  post_measure:
+    singular: పోస్ట్
+    plural: పోస్టులు
